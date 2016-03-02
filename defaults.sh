@@ -1,2 +1,6 @@
 #!/bin/bash
-defaults write com.apple.Safari WarnAboutFraudulentWebsites false
+
+# Allow pop-up windows
+defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically -bool true
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaScriptCanOpenWindowsAutomatically -bool true
+
