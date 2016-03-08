@@ -6,3 +6,6 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 
 # Attempt to stop autofill passwords from showing up
 defaults write com.apple.Safari AutoFillPasswords -bool false
+
+# Stop the Google account from appearing
+defaults write com.apple.Safari accountTypesToSkipForSetup ‘(“com.apple.account.Google”)’
